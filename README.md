@@ -12,4 +12,11 @@ Clicky Game is a React-based application assigned for our Week 20 homework for t
 
 <hr>
 <p>I am having issues with deploying the application and cannot find the solution</p>
-<img src="./public/img/error.png" alt="Error" height="24" width="42">
+<div style = {{
+                width: "100%",
+                height: "300px",
+                opacity: "0.5",
+                backgroundSize: "cover",
+                backgroundImage: "url('http://res.cloudinary.com/deuxif1bt/image/upload/v1524854426/error.png')"
+              }}>
+            </div>
