@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import Score from "./Score";
-import Card from "./Card";
-import CardBox from "./CardBox";
-import Jumbotron from "./Jumbotron";
-import Footer from "./Footer";
-// import Body from "./components/ImageCards";
-// import Wrapper from "./components/Wrapper";
+import Score from "./Components/Score";
+import Card from "./Components/Card";
+import CardBox from "./Components/CardBox";
+import Jumbotron from "./Components/Jumbotron";
+import Footer from "./Components/Footer";
 import kitty from "./kitties.json";
-// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -39,13 +36,13 @@ class App extends Component {
 
   // create a function to shuffle kitties
   shuffleKitties = () => {
-    let kitties = this.state.kitties;
-    let x = kitties.length -1;
-    for(let i = x; i > 0; i--) {
-      let rand = Math.floor(Math.random() * (i + 1));
-      var temp = kitties [i];
-      kitties[i] = kitties [rand];
-      kitties[rand] = temp;
+    let kitties=this.state.kitties;
+    let x=kitties.length -1;
+    for(let i=x; i>0; i--) {
+      let rand=Math.floor(Math.random() * (i+1));
+      var temp=kitties[i];
+      kitties[i]=kitties[rand];
+      kitties[rand]=temp;
     }
     // return array;
     this.setState({ kitties: kitties });
